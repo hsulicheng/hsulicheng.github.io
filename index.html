@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+    
+        .container {
+            max-width: 1024px;
+            height: 100%;
+            margin: 0 auto;
+
+        }
+
+        #nav {
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            z-index: 99;
+        }
+
+
+
+        .Logo {
+            position: fixed;
+            top: -50px;
+            left: 0;
+            z-index: 9;
+        }
+
+        .menu {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .menu1 {
+            width: 80px;
+            height: 100px;
+            display: flex;
+
+        }
+
+        .menu a {
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+
+        .banner {
+            width: 100%;
+            /* height: 121vh; */
+            background-color:white;
+            z-index: 1;
+        }
+
+        .box {
+            width: 100%;
+            
+            display: flex;
+
+        }
+
+        .box-1 {
+            width: 50%;
+           
+            background-color: white;
+        }
+
+        .box-2 {
+            width: 50%;
+           
+            background-color: white;
+        }
+        .box-3{
+            width: 50%;
+            background-color: white;
+        }
+        .box-4{
+            width: 50%;
+            background-color: white;
+        }
+
+        .box-1-top {
+            width: 100%;
+            height: 15%;
+            background-color: white;
+        }
+
+        .box-1-mid {
+            width: 100%;
+            height: 10%;
+
+            background-color: white;
+        }
+
+        .box-1-down {
+            width: 100%;
+            height: 45%;
+            line-height: 35px;
+            text-align: center;
+            background-color: white;
+        }
+
+
+        .box-2-top {
+            width: 100%;
+            height: 15%;
+            background-color: white;
+        }
+
+        .box-2-down {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            background-color: white;
+        }
+
+        .box-D {
+            width: 100%;
+            height: 45vh;
+            background-color: #EDEDED;
+        }
+
+        .box-D-top-l {
+            width: 50%;
+            height: 20%;
+            float: left;
+
+        }
+
+        .box-D-top-r {
+            width: 50%;
+            height: 20%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .box-D-down-1 {
+            width: 100%;
+            height: 20%;
+        }
+
+        .book-news1 {
+            width: 50%;
+            border-bottom: 1px solid black;
+            float: left;
+        }
+
+        .book-news2 {
+            width: 50%;
+            border-bottom: 1px solid black;
+            float: left;
+            text-align: right;
+        }
+
+        .book-news3 {
+            width: 50%;
+            border-bottom: 1px solid black;
+            float: left;
+        }
+
+        .book-news4 {
+            width: 50%;
+            border-bottom: 1px solid black;
+            float: left;
+            text-align: right;
+        }
+
+        .book-news5 {
+            width: 50%;
+            border-bottom: 1px solid black;
+            float: left;
+        }
+
+        .book-news6 {
+            width: 50%;
+            border-bottom: 1px solid black;
+            float: left;
+            text-align: right;
+        }
+
+        .book-news7 {
+            width: 50%;
+            border-bottom: 1px solid black;
+            float: left;
+        }
+
+        .book-news8 {
+            width: 50%;
+            border-bottom: 1px solid black;
+            float: left;
+            text-align: right;
+        }
+
+        .boxone {
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .box-F-l {
+            width: 50%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-F-r {
+            width: 50%;
+            height: 20%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .box-G-1 {
+            width: 25%;
+            height: 20%;
+            float: left;
+
+        }
+
+        .box-G-2 {
+            width: 25%;
+            height: 20%;
+
+            float: left;
+        }
+
+        .box-G-3 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-G-4 {
+            width: 25%;
+            height: 20%;
+            float: left;
+
+        }
+
+        .box-H-l {
+            width: 50%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-H-r {
+            width: 50%;
+            height: 20%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .box-I-1 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-I-2 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-I-3 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-I-4 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-J-l {
+            width: 50%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-J-r {
+            width: 50%;
+            height: 20%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .box-K-1 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-K-2 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-K-3 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-K-4 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-L-l {
+            width: 50%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-L-r {
+            width: 50%;
+            height: 20%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .box-M-1 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-M-2 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-M-3 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-M-4 {
+            width: 25%;
+            height: 20%;
+            float: left;
+        }
+
+        .shop {
+            width: 100%;
+            height: 30vh;
+            background-color: #EDEDED;
+        }
+
+        .shop-shop-l {
+            width: 50%;
+            height: 20vh;
+            float: left;
+        }
+
+        .shop-shop-r {
+            width: 50%;
+            height: 14vh;
+            background-image: url("./img/Google Forms1.png");
+            background-repeat: no-repeat;
+            float: left;
+        }
+
+        .mapall {
+            width: 100%;
+            height: 40vh;
+            background-color: cadetblue;
+        }
+
+        .map-l {
+            width: 10%;
+            float: left;
+        }
+
+        .map-m {
+            width: 40%;
+            float: left;
+        }
+
+        .map-r {
+            width: 50%;
+            height: 35vh;
+            float: left;
+        }
+
+
+
+        ul {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li {
+            padding: 10px 0;
+            background-color: white;
+            list-style: none;
+        }
+
+
+
+        #gotop {
+            display: none;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            padding: 10px 15px;
+            font-size: 20px;
+            background: #777;
+            color: white;
+            cursor: pointer;
+        }
+
+        h3 {
+            line-height: 50px;
+        }
+
+
+        .clear {
+            clear: both;
+        }
+
+        @media(max-width:576px) {
+            .box {
+                flex-direction: column
+            }
+            
+
+            .box-1 {
+                width: 100%;
+                height: 100%;
+                
+            }
+
+            .box-2 {
+                width: 100%;
+                height: 100%;
+                
+            }
+            .box-3{
+                width: 100%;
+                order: 3;
+            }
+            .box-4{
+                width: 100%;
+                order: 2;
+            }
+           
+
+
+            .box-D-top-l {
+                width: 100%;
+                height: 100%;
+            }
+
+            .box-D-top-r {
+                width: 100%;
+                height: 100%;
+            }
+
+            .box-F-l {
+                width: 100%;
+                height: 100%;
+            }
+
+            .box-F-r {
+                width: 100%;
+                height: 100%;
+            }
+
+            .box-G-1 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-G-2 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-G-3 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-G-4 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-I-1 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-I-2 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-I-3 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-I-4 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-J-l {
+                width: 100%;
+                height: 100%;
+            }
+
+            .box-J-r {
+                width: 100%;
+                height: 100%;
+            }
+
+            .box-K-1 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-K-2 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-K-3 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-K-4 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-L-l {
+                width: 100%;
+                height: 100%;
+            }
+
+            .box-L-r {
+                width: 100%;
+                height: 100%;
+            }
+
+            .box-M-1 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-M-2 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-M-3 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .box-M-4 {
+                width: 50%;
+                height: 100%;
+            }
+
+            .shop-shop-l {
+                width: 100%;
+                height: 100%;
+            }
+
+            .shop-shop-r {
+                width: 100%;
+                height: 100%;
+            }
+
+            .map-l {
+                width: 100%;
+                height: 100%;
+            }
+
+            .map-r {
+                width: 100%;
+                height: 100%;
+            }
+
+            .shop-shop-l {
+                width: 100%;
+                height: 20vh;
+
+            }
+
+            .shop-shop-r {
+                width: 100%;
+                height: 14vh;
+
+            }
+
+            .Logo {
+                display: none;
+            }
+
+
+
+
+
+            .menu {
+                display: none;
+                top: 100px;
+                left: 0px;
+            }
+
+            .menu:hover {
+                display: block;
+            }
+
+
+
+
+        }
+
+        .menu1 {
+            width: 50px;
+            height: 50px;
+            background-color: #ccf;
+            display: none;
+        }
+
+        @media (max-width: 576px) {
+
+            .menu1 {
+                display: block;
+                position: absolute;
+                right: 0;
+            }
+
+            .menu1:hover ul {
+                display: block;
+            }
+
+            .menu1 ul {
+                display: none;
+                position: absolute;
+                padding-top: 50px;
+                z-index: 200;
+                right: 0;
+            }
+
+            .menu1 ul li {
+                width: 100px;
+            }
+
+
+            .book-news1 {
+                width: 100%;
+            }
+
+            .book-news2 {
+                width: 100%;
+            }
+
+            .book-news3 {
+                width: 100%;
+            }
+
+            .book-news4 {
+                width: 100%;
+            }
+
+            .book-news5 {
+                width: 100%;
+            }
+
+            .book-news6 {
+                width: 100%;
+            }
+
+            .book-news7 {
+                width: 100%;
+            }
+
+            .book-news8 {
+                width: 100%;
+            }
+
+        }
+        .modal-body{
+            display: flex;
+        }
+        .box-2{width:500px; height:350px;overflow:hidden;}
+        .box-2 img{transform:scale(1,1);transition: all 1s ease-out;}
+        .box-2 img:hover{transform:scale(1.2,1.2);}
+
+        .box-3{width:500px; height:350px;overflow:hidden;}
+        .box-3 img{transform:scale(1,1);transition: all 1s ease-out;}
+        .box-3 img:hover{transform:scale(1.2,1.2);}
+
+        
+
+       
+    </style>
+    
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">新增書籍</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              
+            </div>
+            <div class="modal-body">
+                
+                    
+                    <img src="/img/外出偷馬.jpg" alt="">
+                    <h3>外出偷馬</h3>
+                    
+                   
+                    <img src="/img/從痛苦到痛快.jpg" alt="">
+                    <h3>從痛苦到痛快</h3>
+                   
+                   
+                </div>
+            </div>
+                 
+            
+            <div class="modal-footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="gotop">˄</div>
+    <div class="ALL">
+        <nav id="nav">
+            <div class="Logo"><img src="/img/006.png" alt=""></div>
+
+
+
+            <div class="container">
+
+                <div class="menu">
+
+                    <a href="#aquarius-about">關於寶瓶</a>
+                    <a href="#new-about">最新消息</a>
+                    <a href="#book-about">書籍系列</a>
+                    <a href="#shop-book">訂購書籍</a>
+                    <a href="#tel-about">聯絡我們</a>
+
+
+                </div>
+                <div class="menu1">
+                    <ul>
+                        <a href="#aquarius-about">
+                            <li>關於寶瓶</li>
+                        </a>
+                        <a href="#new-about">
+                            <li>最新消息</li>
+                        </a>
+                        <a href="#book-about">
+                            <li>書籍系列</li>
+                        </a>
+                        <a href="#shop-book">
+                            <li>訂購書籍</li>
+                        </a>
+                        <a href="#tel-about">
+                            <li>聯絡我們</li>
+                        </a>
+                    </ul>
+                </div>
+
+
+
+
+
+        </nav>
+        <section id="section-1">
+            <div class="banner">
+
+                <div class="carousel slide" id="carousel-example-generic" data-ride="carousel" data-interval="4000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner " id="hxp_lunbo">
+                        <div class="item active ">
+                            <img src="./img/001-1111.jpg"> </div>
+                        <div class="item">
+                            <img src="./img/003-1111.jpg"> </div>
+                    </div> <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                        data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="section-2">
+            <div class="container">
+                <div class="box A">
+                    <div class="box-1">
+                        <div id="aquarius-about" class="box-1-top">
+                            <h1 style="color:#00A7EB;">關於寶瓶</h1>
+                        </div>
+                        <div class="box-1-mid">
+                            <h2 style="color:#00A7EB;">總編輯的話</h2>
+                        </div>
+
+                        <div class="box-1-down">
+                            <span>文學,教育,視野,</br>向自己提一個問,</br>得一本書,去探觸,延伸生命的邊界。</span>
+
+                        </div>
+
+
+                    </div>
+                    <div class="box-2"><img src="./img/004.jpg"   alt=""></div>
+
+                </div>
+
+                <div class="box B">
+                    <div class="box-3"><img src="./img/005.jpg" alt=""></div>
+                    <div class="box-4">
+                        <div class="box-2-top">
+                            <h2 style="color:#00A7EB;">寶瓶歷史</h2>
+                        </div>
+                        <div class="box-2-down">
+                            <span>在台灣皇冠文化集團任職8年，成功策劃出《總裁獅子心》、</br>《乞丐囝仔》、《流氓教授》、《哈利·波特》等暢銷書的出</br>版人朱亞君最近卸下皇冠總編輯職位，轉戰聯合文學集團成</br>立的寶瓶文化，負責這家新公司的全盤營運。</br>進而擺脫了純編輯人的眼界，以專業經理人的角度開始以4條</br>路線出書，前進店頭搶灘。</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box C">
+                    <div class="box-1">
+                        <div class="box-1-top">
+                            <h2 style="color:#00A7EB;">寶瓶信念</h2>
+                        </div>
+                        <div class="box-1-down">
+
+                            <span> 寶瓶文化以最旺盛的企圖心在出版市場出發，「把事
+
+
+                                情做大」是寶瓶創社的信念。我們深信，要做出版，
+
+
+                                就要做大眾出版，而以我們的專業、決心與意志力，
+
+
+                                必能讓作品有最完美的呈現，發揮最大的影響力。未
+
+
+                                來，寶瓶將繼續努力出版高品質，且適合大眾閱讀的
+
+
+                                好書，希望藉此努力，能讓讀書成為全民運動！
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <img src="./img/007.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="section-3">
+            <div class="container">
+                <div class="box-D">
+                    <div class="box-D-top">
+                        <div id="new-about" class="box-D-top-l">
+                            <h1 style="color:#00A7EB;">最新消息</h1>
+                        </div>
+                        <div class="box-D-top-r">
+                            <a href="#">更多>></a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="box-D-down">
+                        <div class="box-D-down-1">
+                            <div class="book-news1">
+                                <h2>台南新書分享會,政大書城台南店</h2>
+                            </div>
+                            <div class="book-news2">
+                                <h2>2019/12/14</h2>
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+                        <div class="box-D-down-2">
+                            <div class="book-news3">
+                                <h2>金石堂信義店 新書分享會, 5樓顏講堂</h2>
+                            </div>
+                            <div class="book-news4">
+                                <h2>2019/12/14</h2>
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+                        <div class="box-D-down-3">
+                            <div class="book-news5">
+                                <h2>和平青島 新書對談</h2>
+                            </div>
+                            <div class="book-news6">
+                                <h2>2019/12/14</h2>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box-D-down-4">
+                            <div class="book-news7">
+                                <h2>看不見得書店 與寶瓶聯合舉辦</h2>
+                            </div>
+                            <div class="book-news8">
+                                <h2>2019/12/14</h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="section-4">
+                <div class="container">
+                    <div class="boxone">
+                        <div id="book-about" class="box-E">
+                            <h1 style="color:#00A7EB;">書籍系列</h1>
+                        </div>
+                        <div class="box-F">
+                            <div class="box-F-l">
+                                <h2 style="color: coral;">文學著作</h2>
+                            </div>
+                            <div class="box-F-r"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                更多>>
+                              </a></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="box-G">
+                            
+                            <div class="box-G-1">
+                                <img src="./img/書籍系列文學1.jpg" alt="">
+                                <h3>吃鯛魚讓我打嗝</h3>
+                            </div>
+                            <div class="box-G-2">
+                                <img src="./img/文學書籍系列2.jpg" alt="">
+                                <h3>大觀園內的石頭痕記</h3>
+                            </div>
+                            <div class="box-G-3">
+                                <img src="./img/文學書籍系列3.jpg" alt="">
+                                <h3>分開旅行</h3>
+                            </div>
+                            <div class="box-G-4">
+                                <img src="./img/文學書籍系列4.jpg" alt="">
+                                <h3>實習醫生的秘密手記</h3>
+                            </div>
+                        </div>
+                        <div class="box-H">
+                            <div class="box-H-l">
+                                <h2 style="color: coral;">心理勵志</h2>
+                            </div>
+                            <div class="box-H-r">
+                                <div class="box-F-r"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                    更多>>
+                                  </a></div>
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+                        <div class="box-I">
+                            <div class="box-I-1">
+                                <img src="./img/心理勵志書籍契列1.png" alt="">
+                                <h3>比句點更悲傷</h3>
+                            </div>
+                            <div class="box-I-2">
+                                <img src="./img/心理勵志書籍契列2.png" alt="">
+                                <h3>您好 我是接體員</h3>
+                            </div>
+                            <div class="box-I-3">
+                                <img src="./img/心理勵志書籍系列3.jpg" alt="">
+                                <h3>邊緣人格</h3>
+                            </div>
+                            <div class="box-I-4">
+                                <img src="./img/心理勵志書籍契列4.jpg" alt="">
+                                <h3>職場冷暴力</h3>
+                            </div>
+                        </div>
+                        <div class="box-J">
+                            <div class="box-J-l">
+                                <h2 style="color: coral;">人文歷史</h2>
+                            </div>
+                            <div class="box-J-r">
+                                <div class="box-F-r"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                    更多>>
+                                  </a></div>
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+                        <div class="box-K">
+                            <div class="box-K-1">
+                                <img src="./img/人文歷史書籍系列1.png" alt="">
+                                <h3>研之有物</h3>
+                            </div>
+                            <div class="box-K-2">
+                                <img src="./img/人文歷史書籍系列2.png" alt="">
+                                <h3>內山阿媽</h3>
+                            </div>
+                            <div class="box-K-3">
+                                <img src="./img/人文歷史書籍系列3.jpg" alt="">
+                                <h3>8位女性法律人的生命之河</h3>
+                            </div>
+                            <div class="box-K-4">
+                                <img src="./img/人文歷史書籍系列4.jpg" alt="">
+                                <h3>教育者之師陳伯璋</h3>
+                            </div>
+                        </div>
+                        <div class="box-L">
+                            <div class="box-L-l">
+                                <h2 style="color: coral;">親子教育</h2>
+                            </div>
+                            <div class="box-L-r">
+                                <div class="box-F-r"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                    更多>>
+                                  </a></div>
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+                        <div class="box-M">
+                            <div class="box-M-1">
+                                <img src="./img/親子教養書籍系列1.png" alt="">
+                                <h3>不讓你孤單</h3>
+                            </div>
+                            <div class="box-M-2">
+                                <img src="./img/親子教養書籍系列2.png" alt="">
+                                <h3>對話的力量</h3>
+                            </div>
+                            <div class="box-M-3">
+                                <img src="./img/親子教養書籍系列3.jpg" alt="">
+                                <h3>孩子的情緒行為障礙</h3>
+                            </div>
+                            <div class="box-M-4">
+                                <img src="./img/親子教養書籍系列4.jpg" alt="">
+                                <h3>看見自己的天才</h3>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div id="section-5">
+                <div class="container">
+                    <div id="shop-book" class="shop">
+                        <div class="shop-about">
+                            <h1 style="color:#00A7EB;">訂購書籍</h1>
+                        </div>
+                        <div class="shop-shop">
+                            <div class="shop-shop-l">
+                                <img src="./img/線上訂購單icon.png" alt="">
+                            </div>
+                            <a class="shop-shop-r" href="https://forms.gle/xwZ2y9CNns3USJ6e9"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="section-6">
+                <div class="container">
+                    <div id="tel-about" class="mapall">
+                        <div class="map-l">
+                            <img src="./img/電話11.png">
+                            <img src="./img/地址11.png">
+                            <img src="./img/mail11.png">
+                            <img src="./img/fb11.png">
+
+                        </div>
+                        <div class="map-m">
+                            <span>
+                                <h3>
+                                    02-27494988
+                            </span></br>
+                            110信義區基隆路一段180號</br>
+                            aquarius@udngroup.com</br>
+                            facebook.com/aquariusfans/</br>
+                            </h3></span>
+                        </div>
+                        <div class="map-r">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7566874568333!2d121.56267211500642!3d25.042329983968326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbead826073%3A0xcb1b82269be8a9c!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5Z-66ZqG6Lev5LiA5q61MTgw6Jmf!5e0!3m2!1szh-TW!2stw!4v1576724314364!5m2!1szh-TW!2stw"
+                                width="100%" height="100%" frameborder="0" style="border:0;"
+                                allowfullscreen=""></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#gotop").click(function () {
+                jQuery("html,body").animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#gotop').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+        });
+    </script>
+    </section>
+
+
+
+    <footer id="foooter">
+
+    </footer>
+    </div>
+
+</body>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+
+
+</html>
